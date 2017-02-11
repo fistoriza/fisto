@@ -1,0 +1,9 @@
+<div class="booyah-box col-xs-6 col-xs-offset-3">
+  <h1>New bucket list</h1>
+  <%= simple_form_for @bucket do |f| %>
+    <%= f.input :item %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Submit', class: 'btn btn-success' %>
+  <% end %>
+</div>
